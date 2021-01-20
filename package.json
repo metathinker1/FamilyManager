@@ -1,0 +1,27 @@
+{
+  "name": "familymanager",
+  "version": "1.0.0",
+  "description": "Family Manager",
+  "main": "index.js",
+  "scripts": {
+    "devStart": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/metathinker1/FamilyManager.git"
+  },
+  "author": "Rob Wood",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/metathinker1/FamilyManager/issues"
+  },
+  "homepage": "https://github.com/metathinker1/FamilyManager#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.11.12"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.7"
+  }
+}
