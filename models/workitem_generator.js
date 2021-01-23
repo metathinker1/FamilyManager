@@ -7,6 +7,14 @@ const workitemGeneratorSchema = new mongoose.Schema({
         type: String,
         required: true
     },
+    description: {
+        type: String,
+        required: true
+    },
+    member: {
+        type: String,
+        required: false
+    },
     startDate: {
         type: Date,
         required: true
