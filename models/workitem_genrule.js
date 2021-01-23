@@ -2,7 +2,7 @@ const mongoose = require('mongoose')
 
 // TODO: Consider: betweenType: enum
 // TODO: Add array types: futureDates, sendDates
-const workitemGeneratorSchema = new mongoose.Schema({
+const workitemGenRuleSchema = new mongoose.Schema({
     name: {
         type: String,
         required: true
@@ -30,4 +30,4 @@ const workitemGeneratorSchema = new mongoose.Schema({
 
 })
 
-module.exports = mongoose.model('WorkitemGenerator', workitemGeneratorSchema)
+module.exports = mongoose.model('WorkitemGenRule', workitemGenRuleSchema)
