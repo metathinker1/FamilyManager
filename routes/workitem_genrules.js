@@ -8,6 +8,7 @@ const WorkitemGenRule = require('../models/workitem_genrule')
 
 // Get all workitem generators
 router.get('/', async (req, res) => {
+    console.log('get(): Start')
     try {
         const workitemGenRules = await WorkitemGenRule.find()
         res.json(workitemGenRules)

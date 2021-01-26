@@ -22,8 +22,11 @@ db.once('open', () => console.log('connected to database'))
 
 app.use(express.json())
 
-const workitemGenRouter = require('./routes/workitem_genrules');
-app.use('/workitemgenrules', workitemGenRouter);
+const workitemGenRuleRouter = require('./routes/workitem_genrules');
+app.use('/workitemgenrules', workitemGenRuleRouter);
+
+const workitemGeneratorRouter = require('./routes/workitem_generators');
+app.use('/workitemgens', workitemGeneratorRouter);
 
 app.listen(3000, () => console.log('server started'))
 
